@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html  manifest="your-manifest-file">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static',filename='style.css')}}" />
+    <script src="{{url_for('static',filename='functions.js')}}"></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="{{url_for('index')}}">Task1</a></li>        
+        <li><a href="{{url_for('reg')}}">Task2</a></li>
+        
+    </ul>
+</nav>
+{%block body%}
+
+{%endblock%}
+
+<script>
+    
+</script>
+</body>
+</html>

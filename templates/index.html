@@ -1,0 +1,50 @@
+
+{% extends 'layout.html' %}
+{%block body%}   
+<h1 style="text-align:center;">BitCoin and Eth Analysis</h1>
+<p align='center'>This webpage give update about Bit coin and Eherium price in every minute and show historical graph</p>
+<div class="container">
+    
+    <div class="options">
+
+<form method="POST" action="">
+        <h3>Show Bit-coin price in $ update every minutes</h3>
+        <label>BitCoin to currency: (coverter) </label>
+        <select name="btcCon">
+            <option value="USD">$Dollar</option>
+            <option value="PKR">Rs: Rupies</option>
+            <option value="CNY">China currency</option>
+        </select>
+        <input type="submit" value="convert">
+        <input type="hidden" value="BTC" name="checker">
+       
+    </form>
+<h3>Show Bit-coin price in $ update every minutes</h3>
+<form method="POST">
+        <label>EHT to currency: (coverter) </label>
+        <select name="ethCon">
+                <option value="USD">$Dollar</option>
+                <option value="PKR">Rs: Rupies</option>
+                <option value="CNY">China currency</option>
+        </select>
+        <input type="hidden" value="ETH" name="checker">
+        <input type="submit" value="convert">
+       
+    </form>
+    <div id="display">
+        ...
+    </div>
+    <script>
+    loadDoc('/prices','display');
+    </script>
+    
+</div>
+
+<div class="display">
+<div id="img"><img src='static/abc.png'></div>
+</div>
+</div>
+<script>
+    loadDoc('/update/abc','img')
+</script>
+{%endblock%}

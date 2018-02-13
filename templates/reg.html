@@ -1,0 +1,48 @@
+{%extends 'layout.html' %}
+
+{%block body%}
+
+<h1 style="text-align:center;">Use TesnorFlow to Solve Regression Problem</h1>
+<p align='center'>This webpage give update about Bit coin and Eherium price in every minute and show historical graph</p>
+<div class="container">
+    
+    <div class="options">
+
+
+<form method="POST">
+                Start Date<input type="date" name="start" onchange="document.getElementById('dis').innerHTML=this.value;" value="{{start}}"><br>
+                <span id="dis">{{start}}</span><br>
+                End Date:<input type="date" name="end" onchange="document.getElementById('dis1').innerHTML=this.value;"><br>
+                <span id="dis1">{{end}}</span>
+                <br>
+
+                <input type="submit" value="Apply">
+                
+    </form>
+    <h2>Current BTC to <span class="label"> </span></h2>
+    <h2>Current Ethereum to USD is: <span class="label"></span></h2>
+
+    <div id="display">
+        ...
+    </div>
+    <script>
+    loadDoc('/prices','display');
+    </script>
+</div>
+
+<div class="display">
+<div id="img">...</div>
+</div>
+</div>
+
+<script>
+    
+     var dateStart = document.querySelector('input[name="start"]');
+    dateStart.value = '{{start}}';
+    var dateEnd = document.querySelector('input[name="end"]');
+    dateEnd.value = '{{end}}';
+    
+    loadDoc('/update/regression','img');
+    
+</script>
+{%endblock%}
