@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Arbitrage</h1>
+<p>HOme page</p>
+{{data}}
+<ul>
+{% for row in data %}
+<li>{{row}}</li>
+{%endfor%}
+</ul>
+
+
+{% endblock%}

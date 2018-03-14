@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Saylani Student Demo HOME page</h1>
+<p>HOme page</p>
+<ul>
+{% for row in data %}
+<li>{{row}}</li>
+{%endfor%}
+</ul>
+
+
+{% endblock%}
+
