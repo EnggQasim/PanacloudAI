@@ -1,0 +1,231 @@
+==== Artificial Intelligence
+born in 1950 "The effort to automate intellectual tasks normally performed
+by humans.
+2) AI is a general field that encompasses machine learning and
+deep learning, 
+3) many expert consider Human Inelligence can be invole with handcrafting rules this approch called symbolic AI.
+the dominant paradigm
+in AI from the 1950s to the late 1980s. 
+4) It reached its peak popularity during the expert
+systems boom of the 1980s.
+5) Although symbolic AI proved suitable to solve well-defined, logical problems, such as
+playing chess, it turned out to be intractable to figure out explicit rules for solving more
+complex, fuzzy problems, such as image classification, speech recognition, and language
+translation. A new approach arose to take symbolic AI’s place: machine learning
+
+====== 1.1.2 Machine learning
+1) general-purpose computer when it was designed in the
+1830s and 1840s,, because the concept of general-purpose computation was yet to be
+invented
+2) started to flourish in the 1990 machine learning
+3) Machine learning is tightly related
+to mathematical statistics, 
+4) Machine learning deal with complex data like images
+
+
+=== 1.1.3 Learning representations from data
+machine learning,
+we need three things:
+1) Input data points—
+2)Examples of the expected output—
+3)way to measure whether the algorithm is doing a good job
+4) A machine-learning model transforms its input data into meaningful outputs, a process
+that is “learned” from exposure to known examples of inputs and outputs 
+5) learn useful representations of the input data at
+hand—representations that get us closer to the expected output.
+6)  So that’s what machine learning is, technically: searching for useful representations
+of some input data, within a predefined space of possibilities, using guidance
+from a feedback signal. This simple idea allows for solving a remarkably broad range
+of intellectual tasks, from speech recognition to autonomous car driving.
+ Now that you understand what we mean by learning, let’s take a look at what makes
+deep learning special. 
+
+==== 1.1.4 The “deep” in deep learning
+1) this idea of successive
+layers of representations
+2)  Other appropriate names for the field could have been
+layered representations learning and hierarchical representations learning
+3) these layered representations are (almost always) learned via
+models called neural networks
+4) deep learning is a mathematical framework
+for learning representations from data.
+5) through successive filters
+and comes out increasingly purified (that is, useful with regard to some task)
+6) So that’s what deep learning is, technically: a multistage way to learn data representations.
+It’s a simple idea—but, as it turns out, very simple mechanisms, sufficiently
+scaled, can end up looking like magic. 
+
+==== 1.1.5 Understanding how deep learning works
+find the sets of weight values with measure scoring true value to predict value with the help of object function and opitimzer give feedback and adjust weights.
+
+
+==== 1.1.6 What deep learning has achieved so far
+
+==== 1.1.7 Don’t believe the short-term hype
+==== 1.1.8 The promise of AI
+====== 1.2 Before deep learning: a brief history of machine learning
+	
+
+
+====1.2.1 Probabilistic modeling
+  1) probabilitsic model early form of machine learning it's statistics   principle for data analysis
+	a) Navie Bayes Algorithm (Classifier)
+futures in the input data are all independent(a strong, navie 	  assumption, which is where the name comes from
+
+ 
+  2) these are you all start with navie bayes (closely related model is   the logistic regression{logreg for short})
+  3) thanks to its simple and versatile nature. It’s often the first thing
+a data scientist will try on a dataset to get a feel for the classification task at hand
+
+
+====1.2.2 Early neural networks
+1)  Neural network comes into toy form in 1950s, in 1980 people discover packpropagation a way to train chains of parametric operations using gradient-descent optimization
+
+====1.2.3 Kernel Method
+1990s, SVMs aim at solving classification problems by finding good
+decision boundaries between two sets of points
+belonging to two different categories.
+==> SVMs proceed to find these boundaries in two steps:
+1 The data is mapped to a new high-dimensional representation where the
+decision boundary can be expressed as a hyperplane (if the data was twodimensional,
+as in figure 1.10, a hyperplane would be a straight line).
+2 A good decision boundary (a separation hyperplane) is computed by trying to
+maximize the distance between the hyperplane and the closest data points from
+each class, a step called maximizing the margin. This allows the boundary to generalize
+well to new samples outside of the training dataset.
+The technique of mapping data to a high-dimensional representation 
+
+kernel method crafted by hand otherwise learn from data:
+A kernel function is a computationally tractable operation that maps any
+two points in your initial space to the distance between these points in your target
+representation space, completely bypassing the explicit computation of the new representation.
+
+
+ But SVMs proved hard to scale to large datasets and didn’t provide good results for
+perceptual problems such as image classification. Because an SVM is a shallow
+method, applying an SVM to perceptual problems requires first extracting useful representations
+manually (a step called feature engineering), which is difficult and brittle. 
+ 
+
+============ 1.2.4 Decision trees, random forests, and gradient boosting machines
+1) 2000, 2010 decision trees also use kernel method learn from data
+2) Gradient boosting second-best algorithm for shallow machine learning task: large decision trees used.
+not good for nonperceptual data.
+
+
+2) 2010 to 2014 random forest best algorithm to solve any shallow learning task
+3) disicion tree use 2000 to 2010
+4) 2014 gradient boosting machines much like random, forest is a machine-learning
+technique based on ensembling weak prediction models, generally decision trees.
+
+5) gradient boosting outperform with similar properties it may be one of the best algorithm, it is not best for perceptual data
+
+
+=====1.2.5 Back to neural network
+1) 2010 neural network completely shunned(khatum)
+2) groups of Geoffrey Hinton to take neural network breakthroughs in 2010.
+3) 2011 firt image classification competitions win with neural network.
+4) 2012 Hinton’s group train image-net large data accuracy 83.6%
+5) 2015 deep convolutional neural network accuracy 96.4% work on all perceptual task.
+6) 2015 2016netural-network lenguage processing it has completely replace SVM and decision trees
+7) Keras-base neural network.
+
+===== 1.2.6 What makes deep learning different
+1) completely automate solve features engineering problem simple end-to-end deep-learning-model.
+2) multiple successive layers, ll layers of representation
+jointly, at the same time,
+3) Everything is supervised by a single feedback signal
+4) representations to be learned by
+breaking them down into long series of intermediate spaces (layers)
+5) the incremental, layer-by-layer way in which increasingly complex representations are developed,
+6) these intermediate incremental representations are learned jointly, each layer
+being updated to follow both the representational 
+7) Together, these two properties have made deep learning
+vastly more successful than previous approaches to machine learning. 
+
+===== 1.2.7 The modern machine-learning landscape
+1) In 2016 and 2017, Kaggle gradient boosting (for structure data)
+machines and deep learning(perceptual problems such as image classification).
+2) XBoost support python, R and Keras
+3)  gradient boosting machines, for shallowlearning
+problems; and deep learning, for perceptual problems. 
+
+************1.3 Why deep learning? Why now?**********************************
+1) Two keys ideas convolutional neural networks
+and backpropagation 1989, The Long ShortTerm
+Memory (LSTM) algorithm 1997 
+2)  So why did deep
+learning only take off after 2012? What changed in these two decades?
+==> Hardware
+==> Datasets and benchmarks
+==> Algorithmic advances
+Machine learning isn’t
+mathematics or physics, where major advances can be done with a pen and a piece of
+paper. It’s an engineering science
+3) The real bottlenecks throughout the 1990s and 2000s were data and hardware.  
+
+
+======= 1.3.1 Hardware
+1) 1990 and 2010 off-the-shelf CPUs became faster 
+2) 2007, NVIDIA launched CUDA  a programming
+interface for its line of GPUs
+3) around 2011, some researchers began
+to write CUDA implementations of neural nets—Dan Ciresan4
+ and Alex Krizhevsky5
+were among the first.
+4) 2016 TPU 10 times faster to GPU's.
+
+===== 1.3.2 Data
+1) data is collecting by internet, youtube,google,flicker...
+2)  As Kaggle has been demonstrating since 2010, public competitions are an excellent
+way to motivate researchers and engineers to push the envelope. 
+
+=======1.3.3 Algorithms
+1) they weren’t able to shine against
+more-refined shallow methods such as SVMs and random forests
+2) 2009–2010 better gradient propagation
+==>activation function for neural layers
+==>weight-initialization schemes with layer-wise pretraining
+==> Better Optimization schems (RMSPprop and Adam)
+3)  Finally, in 2014, 2015, and 2016, 
+=>(gradient propagation)
+=>residual connections, and depthwise
+separable convolutions. 
+
+============1.3.4 A new wave of investment
+1) computer vision in 2012–2013,
+and eventually for all perceptual tasks
+2) 2011 $19 million
+   2014 $349 million
+   2014 $500 million DeepMind
+	$300 million silicon valley
+The deep-learning hardware startup Nervana Systems was acquired by
+Intel in 2016 for over $400 million
+
+3) 2015, Google CEO Sundar Pichai stated,
+“Machine learning is a core, transformative way by which we’re rethinking how we’re
+doing everything. We’re thoughtfully applying it across all our products, be it search,
+ads, YouTube, or Play. And we’re in early days, but you’ll see us—in a systematic way—
+apply machine learning in all these areas.”
+
+===== 1.3.5 The democratization of deep learning
+1) deep learning
+required significant C++ and CUDA expertise
+2) Theano and Tensorflow support python
+3) kearas early 2015, Keras quickly became the go-to deep-learning solution for large
+numbers of new startups, graduate students, and researchers pivoting into the field
+
+==== 1.3.6 Will it last?
+1) we use will directly inherit from modern deep learning and its core concepts.
+These important properties can be broadly sorted into three categories:
+==>Simplicity
+==>Scalability
+==>Versatility and reusability
+for instance, it’s possible to take a
+deep-learning model trained for image classification and drop it into a videoprocessing
+pipeline. 
+
+3) progress generally follows a sigmoid curve: it starts with a period of
+fast progress
+4) Deep learning in 2017 seems to be in the
+first half of that sigmoid, with much more progress to come in the next few years
